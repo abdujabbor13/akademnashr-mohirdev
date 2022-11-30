@@ -1,8 +1,24 @@
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: roboto, arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
 .site-header{
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
+  align-items: center;
+}
+
+.site-header-actions{
+  display: flex;
+  align-items: center;
 }
 
 .sitenav-list{
+  display: flex;
   list-style: none;
 }
 
@@ -25,6 +41,9 @@
 }
 
 .hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #252320;
   color: #fff;
 }
@@ -42,24 +61,26 @@
 .hero-heading{
   font-size: 40px;
   line-height: 1.2;
-  letter-spacing: 0.5px;
+  font-family: roboto condensed, roboto, arial, sans-serif;
 }
 
 .hero-img{
   width:510px;
   height: 510px;
 }
-.hero-text{
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-}
 
 .features-heading{
   width: 330px;
   font-size: 72px;
   line-height: 1.2;
+  font-family: roboto condensed, roboto, arial, sans-serif;
   letter-spacing: 0.5px;
+}
+
+.features-list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .feature{
@@ -75,16 +96,13 @@
 .feature-title{
   font-size: 24px;
   line-height: 1.2;
-  letter-spacing:0.5;
-}
-
-.feature-info{
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+  font-family: roboto condensed, roboto, arial, sans-serif;
 }
 
 .promo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
@@ -96,11 +114,7 @@
 .promo-heading{
   font-size: 40px;
   line-height: 48px;
-}
-
-.promo-text{
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: roboto condensed, roboto, arial, sans-serif;
 }
 
 .promo-hhighlight{
@@ -117,22 +131,36 @@
   background-color: #f8f8f8;
 }
 
-.site-footer-divader{
-  background-color: rgba(37, 36, 32, 0.5);
-  height: 2px;
+.site-footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .site-footer ul{
   list-style: none;
 }
 
+.site-footer-socials{
+  display: flex;
+  align-items: center;
+}
+
+.site-footer-divader{
+  background-color: rgba(37, 36, 32, 0.5);
+  height: 2px;
+}
+
+.site-footer-bottom{
+  display: flex;
+}
+
 .site-footer-links{
   width: 224px;
+  line-height: 19px;
 }
 
 .site-footer-links a{
-  font-size: 16px;
-  line-height: 19px;
   text-decoration: none;
   color: #252420;
 }
